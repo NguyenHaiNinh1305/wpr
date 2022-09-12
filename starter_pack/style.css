@@ -1,0 +1,402 @@
+/* @font-face {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/l/font?kit=FwZc7-Am2FI_-VOxaLDvvq27rWO7&skey=96867d716c89840e&v=v19) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+} */
+
+
+
+body {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color: #222222;
+    display: flex;
+    justify-content: center;
+
+}
+
+body div {
+    margin-bottom: 30px;
+}
+
+header {
+    border-bottom: 1px #ccc;
+    height: 80px;
+    width: 700px;
+}
+
+#course-name {
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ee3322;
+
+
+}
+
+.header-block {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.stack-circle {
+    background-color: #ffee00;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    font-weight: bold;
+    transform: rotate(-30deg);
+    text-align: center;
+    line-height: 3rem;
+    margin-left: 5px;
+
+}
+
+.stack-circle-block {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#quiz-name {}
+
+.banner {
+    width: 700px;
+
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+
+}
+
+.banner-title {
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'Pangolin', 'Trebuchet MS', 'cursive';
+    padding: 10px;
+    font-size: 60px;
+    color: black;
+    /* max-width: 50%; */
+    position: relative;
+    top: 112px;
+}
+
+#author {
+    line-height: 18px;
+    align-items: center;
+}
+
+#author p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+#introduction {
+    width: 100%;
+}
+
+#introduction div p {
+    max-width: 700px;
+    line-height: 18px;
+}
+
+#introduction div p br {
+    display: block;
+    margin: 18px 0;
+}
+
+#box-start {
+    background-color: #f1f1f1;
+    border: 1px solid #dcdcdc;
+}
+
+#box-submit {
+    background-color: #f1f1f1;
+    border: 1px solid #dcdcdc;
+}
+
+#box-result {
+    background-color: #f1f1f1;
+    border: 1px solid #dcdcdc;
+}
+
+#box-start h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 18px;
+
+}
+
+#box-result h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 18px;
+
+}
+
+#box-result h5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 18px;
+
+}
+
+#box-result p {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 18px;
+
+}
+
+#box-start h4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: lighter;
+    line-height: 18px;
+
+
+}
+
+#box-result h4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: lighter;
+    line-height: 18px;
+
+
+}
+
+#box-start button {
+    background-color: #2196F3;
+    margin: 18px auto;
+    display: flex;
+    border: none;
+    cursor: pointer;
+}
+
+#box-result button {
+    background-color: #2196F3;
+    margin: 18px auto;
+    display: flex;
+    border: none;
+    cursor: pointer;
+}
+
+#box-submit button {
+    background-color: #4CAF50;
+    margin: 18px auto;
+    display: flex;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+#box-start button:hover {
+    background-color: #0d8bf2;
+
+}
+
+#box-result button:hover {
+    background-color: #0d8bf2;
+
+}
+
+#box-submit button:hover {
+    background-color: #46a049;
+
+}
+
+#box-start button span {
+    margin: 18px;
+    color: white;
+
+}
+
+#box-submit button span {
+    margin: 18px;
+    color: white;
+
+}
+
+#box-result button span {
+    margin: 18px;
+    color: white;
+
+}
+
+#box-start button span svg {
+    fill: #ffff;
+    position: relative;
+    top: 6px;
+}
+
+#box-submit button span svg {
+    fill: #ffff;
+    position: relative;
+    top: 6px;
+}
+
+#box-result button span svg {
+    fill: #ffff;
+    position: relative;
+    top: 6px;
+}
+
+#attempt-quiz label {
+    font-size: 15px;
+}
+
+#attempt-quiz form div div {
+    margin: 1px;
+    background-color: #f1f1f1;
+
+}
+
+#attempt-quiz {
+    width: 100%;
+    display: none;
+}
+
+#attempt-quiz input {
+
+    margin: 15px;
+
+
+}
+
+#attempt-quiz form div div:hover {
+    background-color: #ddd;
+
+}
+
+#attempt-quiz form div div:has(.option-selected:checked) {
+    background-color: #ddd;
+}
+
+
+.question-text {
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+#review-quiz form div div {
+    margin: 1px;
+    background-color: #f1f1f1;
+
+}
+
+#review-quiz {
+    display: none;
+}
+
+#review-quiz form div div:has(.correct-answer) {
+    background-color: #d4edda;
+}
+
+#review-quiz form div div:has(.option-correct) {
+    background-color: #ddd;
+}
+
+#review-quiz form div div:has(.wrong-answer) {
+    background-color: #f8d7da;
+}
+
+#review-quiz label {
+    font-size: 15px;
+}
+
+.label-aws-checked {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    margin: 9px;
+    padding: 3px;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    float: right;
+
+}
+
+
+#review-quiz input {
+
+    margin: 15px;
+
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    header {
+        width: 95%;
+        margin: auto;
+    }
+
+    /* #quiz-name {
+        width: 95%;
+        height: 95%;
+        margin: auto;
+
+
+    } */
+    .banner {
+        width: 95%;
+        height: 95%;
+        margin: auto;
+
+
+    }
+
+
+    .banner-title {
+        position: sticky;
+        font-size: 40px;
+    }
+
+    #introduction {
+        width: 95%;
+        margin: auto;
+    }
+
+    .banner {
+        height: auto;
+
+    }
+
+    #attempt-quiz {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .stack-circle-block {
+        display: none;
+    }
+
+}
